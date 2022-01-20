@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2 solution</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        body {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+        .warp{
+            border: 5px solid black;
+        }
+        h1 {
+            font-size: 175%;
+            text-align: center;
+        }
+
+        .section {
+            display: inline;
+            background-color: gray;
+            border: 5px solid white;
+            float: left;
+            /*margin: 10px;*/
+        }
+
+        .secTitle {
+            display: inline-block;
+            font-size: 125%;
+            float: right;
+            border-left: 5px solid black;
+            border-bottom: 5px solid black;
+            text-align: center;
+            font-weight: bold;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        #sec1 {
+            color: black;
+            background-color: pink;
+        }
+
+        #sec2 {
+            color: white;
+            background-color: red;
+        }
+
+        #sec3 {
+            color: black;
+            background-color: rgb(173, 173, 105);
+        }
+
+        @media (max-width: 767px) {
+            .section {
+                width: 100%;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            #sec1p,
+            #sec2p {
+                width: 50%;
+            }
+
+            #sec3p {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .section {
+                width: calc(100%/3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our Menu</h1>
+    <div class="section" id="sec1p"><div class="warp">
+        <span class="secTitle" id="sec1">Chicken</span><br /><br />Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Deleniti eos vel veritatis nostrum impedit nemo et explicabo at maiores architecto, nisi pariatur aut ut
+        repellat ea placeat. Totam, unde laboriosam enim suscipit vel, quaerat quia ipsam est rem repellendus
+        accusantium. Optio quae aspernatur quidem quos temporibus iste dolor ea. Iste?</div>
+    </div>
+
+    <div class="section" id="sec2p"><div class="warp">
+        <span class="secTitle" id="sec2">Beef</span><br /><br />Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Deleniti eos vel veritatis nostrum impedit nemo et explicabo at maiores architecto, nisi pariatur aut ut
+        repellat ea placeat. Totam, unde laboriosam enim suscipit vel, quaerat quia ipsam est rem repellendus
+        accusantium. Optio quae aspernatur quidem quos temporibus iste dolor ea. Iste?</div>
+    </div>
+
+    <div class="section" id="sec3p"><div class="warp">
+        <span class="secTitle" id="sec3">Suchi</span><br /><br />Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Deleniti eos vel veritatis nostrum impedit nemo et explicabo at maiores architecto, nisi pariatur aut ut
+        repellat ea placeat. Totam, unde laboriosam enim suscipit vel, quaerat quia ipsam est rem repellendus
+        accusantium. Optio quae aspernatur quidem quos temporibus iste dolor ea. Iste?</div>
+    </div>
+</body>
+
+</html>
